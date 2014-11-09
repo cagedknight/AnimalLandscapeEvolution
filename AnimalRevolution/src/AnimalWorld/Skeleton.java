@@ -10,7 +10,7 @@ package AnimalWorld;
  * @author Holly
  */
 public class Skeleton extends CompositeComponent{
-    public Skeleton(){
-        super();
+    public Skeleton(int size){
+        super(size);
     }
 }
