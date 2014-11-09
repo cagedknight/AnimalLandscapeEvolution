@@ -10,6 +10,7 @@ package AnimalWorld;
  * @author Holly
  */
 public interface BodyComponent {
+    public int getSize();
     public void add(BodyComponent component) throws LeafComponentException;
     public void remove(BodyComponent component) throws LeafComponentException;
     public BodyComponent getChild(int i) throws LeafComponentException;
