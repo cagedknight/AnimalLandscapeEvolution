@@ -10,7 +10,7 @@ package AnimalWorld;
  * @author Holly
  */
 public class Torso extends CompositeComponent{
-    public Torso(){
-        super();
+    public Torso(int size){
+        super(size);
     }
 }
