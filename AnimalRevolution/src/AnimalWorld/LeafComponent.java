@@ -13,9 +13,16 @@ package AnimalWorld;
 public abstract class LeafComponent implements BodyComponent {
     
     private LeafComponentException except = new LeafComponentException("This leaf has no children");
+    private int size;
     
-    public LeafComponent(){
-        
+    
+    public LeafComponent(int tempSize){
+        size = tempSize;
+    }
+    
+    @Override
+    public int getSize(){
+        return size;
     }
     
     @Override
