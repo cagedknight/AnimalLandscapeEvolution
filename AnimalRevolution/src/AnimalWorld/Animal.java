@@ -11,6 +11,7 @@ public abstract class Animal implements Organism {
 
     protected EatingStrategy eatingStrat;
     protected MovementStrategy moveStrat;
+    protected OutCrossing outCrossing;
     protected int size;  //the higher the number the bigger the animal
     protected int movementSpeed;   //number is how many squared that the animal can move
     protected int[] position;    //array of size 2, with 0 being the x coord and 1 being the y
