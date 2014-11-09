@@ -12,13 +12,24 @@ package AnimalWorld;
  */
 public abstract class LeafComponent implements BodyComponent {
     
+    private LeafComponentException except = new LeafComponentException("This leaf has no children");
+    
     public LeafComponent(){
         
     }
     
-    public void add(BodyComponent component){}
-    public void remove(BodyComponent component){}
-    public BodyComponent getChild(int i){
-        throw new LeafComponentException(String str);
+    @Override
+    public void add(BodyComponent component) throws LeafComponentException{
+        throw except;
+    }
+    
+    @Override
+    public void remove(BodyComponent component) throws LeafComponentException{
+        throw except;
+    }
+    
+    @Override
+    public BodyComponent getChild(int i) throws LeafComponentException{
+        throw except;
     }      
 }
