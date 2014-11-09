@@ -10,7 +10,7 @@ package AnimalWorld;
  * @author Holly
  */
 public class Bone extends LeafComponent{
-    public Bone(){
-        super();
+    public Bone(int size){
+        super(size);
     }
 }
