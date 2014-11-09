@@ -1,5 +1,5 @@
 /*
- * FUCK GITHUB IN THE ASS
+ * github is ok
  */
 package AnimalWorld;
 
