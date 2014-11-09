@@ -10,7 +10,7 @@ package AnimalWorld;
  * @author Holly
  */
 public class Head extends CompositeComponent {
-    public Head(){
-        super();
+    public Head(int size){
+        super(size);
     }
 }
