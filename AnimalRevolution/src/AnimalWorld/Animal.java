@@ -1,7 +1,7 @@
 package AnimalWorld;
 
 /**
- * NATE CAN YOU SEE THIS.. DONE BY DAVE
+ * 
  * 
  * Animal is the parent class of all creatures: Mammal
  * 
@@ -16,6 +16,7 @@ public abstract class Animal implements Organism{
     protected boolean isCannibal;  //0 is not a cannibal, 1 is a cannibal
     protected boolean canEatLarger; //0 can not eat larger creatures, 1 can eat larger
     protected String name;    //the name of this Animal
+    protected String gender; //the gender of the Animal 
     
     public Animal(String aniName, int[] attributes){
         position = new int[2];
