@@ -18,14 +18,17 @@ public abstract class CompositeComponent implements BodyComponent{
         children = new ArrayList<BodyComponent>();
     }
     
+    @Override
     public void add(BodyComponent component){
         children.add(component);
     }
     
+    @Override
     public void remove(BodyComponent component){
         children.remove(component);
     }
     
+    @Override
     public BodyComponent getChild(int i){
         return children.get(i);
     }
