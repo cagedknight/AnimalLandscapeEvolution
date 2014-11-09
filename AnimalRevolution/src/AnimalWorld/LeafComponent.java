@@ -10,6 +10,15 @@ package AnimalWorld;
  *
  * @author davidbenoit
  */
-public abstract class LeafComponent {
+public abstract class LeafComponent implements BodyComponent {
     
+    public LeafComponent(){
+        
+    }
+    
+    public void add(BodyComponent component){}
+    public void remove(BodyComponent component){}
+    public BodyComponent getChild(int i){
+        throw new LeafComponentException(String str);
+    }      
 }
