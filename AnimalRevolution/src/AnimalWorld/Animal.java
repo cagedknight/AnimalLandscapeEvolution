@@ -11,14 +11,14 @@ public abstract class Animal implements Organism {
 
     protected EatingStrategy eatingStrat;
     protected MovementStrategy moveStrat;
-    protected OutCrossing outCrossing;
+    protected OutCrossing outCrossingStrat;
     protected int size;  //the higher the number the bigger the animal
     protected int movementSpeed;   //number is how many squared that the animal can move
     protected int[] position;    //array of size 2, with 0 being the x coord and 1 being the y
     protected boolean isCannibal;  //0 is not a cannibal, 1 is a cannibal
     protected boolean canEatLarger; //0 can not eat larger creatures, 1 can eat larger
     protected String name;    //the name of this Animal
-    protected String gender; //the gender of the Animal 
+    protected int gender; //0 is a femail, 1 is male
 
     public Animal(String aniName, int[] attributes) {
         position = new int[2];
@@ -47,6 +47,8 @@ public abstract class Animal implements Organism {
         size = attributes[4];
 
         movementSpeed = attributes[5];
+        
+        gender = attributes[6];
 
     }
 
