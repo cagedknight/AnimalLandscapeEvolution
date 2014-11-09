@@ -13,9 +13,20 @@ import java.util.ArrayList;
  */
 public abstract class CompositeComponent implements BodyComponent{
     protected ArrayList<BodyComponent> children;
+    protected int size;
     
-    public CompositeComponent(){
+    public CompositeComponent(int tempSize){
         children = new ArrayList<BodyComponent>();
+        size = tempSize;
+    }
+    
+    @Override
+    public int getSize(){
+        int tempSize = size;
+        for(int i = 0; i < children.size(); i++){
+            tempSize += children.get(i).getSize();
+        }
+        return tempSize;
     }
     
     @Override
