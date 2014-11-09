@@ -35,7 +35,7 @@ public class Board<T extends Organism>{
     public int[] nearestClosest(T org, int x, int y) throws BadLocationException{
         if(board[x][y] == org)
             return new int[]{x,y};
-        for(int i = 1; i <= 10; i++){
+        for(int i = 1; i <= 100; i++){
             if(x <= i){
                 if(y <= i){            
                     if(board[x + i][y] == org)
